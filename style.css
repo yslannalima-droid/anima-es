@@ -1,0 +1,90 @@
+body{
+    position: relative;
+    height: 100dvh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   
+        }
+
+div{
+position: absolute;
+height:100px ;
+width:100px ;
+border-radius: 100%;
+animation: forwards 2s ease-in-out;
+}
+
+
+#direita{
+background-color: rgb(68, 71, 255);
+animation-name:  direita;
+
+
+ }
+
+#esquerda{
+background-color: rgb(255, 0, 0);
+animation-name: esquerda ;
+
+}
+
+
+@keyframes esquerda {
+    0%{
+        transform: translatex(  -500px ) scale(0 );
+       
+       
+    }
+    
+   25%{
+   transform: translateX( -500px) scale(1)
+   }
+
+
+   75%{
+    
+     opacity: 95%;
+
+
+   }
+   
+
+    100%{ 
+        transform: translateX( 0 ) scale( 2)  ;
+        opacity: 60%;
+    
+    }
+}
+
+
+@keyframes direita {
+    0%{
+        transform: translateX(  500px )scale(0 )
+       
+       
+    }
+    25%{ 
+        transform: translateX( 500px ) scale(1);
+
+      
+    }
+
+     75%{
+        
+       opacity: 95%;
+
+
+     }
+
+      100%{  transform: translateX(0) scale( 2);
+        opacity: 60% ;
+    
+
+    }
+
+}
+
+
+
+
